@@ -1,0 +1,140 @@
+import
+t = turtle.Turtle() 基本。
+
+t.home()
+t.clear()
+
+for x in range(4):
+  t.forward(100)
+  t.left(90)
+  
+print('hello')
+
+
+Q145
+t.home()
+t.clear()
+
+for i in range(4):
+  t.up()
+  t.forward(20)
+  t.down()
+  for x in range(4):
+    t.forward(100)
+    t.left(90)
+  t.left(-90)しかくよっつつくるやつ。
+  繰り返す場所を考える。
+  
+Q151
+t.home()
+t.clear()
+
+for i in range(6):
+  t.forward(100)
+  t.left(60)
+正三角形をもとに、繰り返す回数を倍に、角度を半分にすると正六角形になる。
+
+
+Q153
+def func():
+  i = 3
+  return i
+iに３を代入して、funcでiを呼び出す。
+名前を付けて３を呼び出せる点が特徴。
+
+
+Q154
+def func(v):
+  i = ⅴ + 3
+  return i
+  ⅴを引数にして、funcを呼び出す。
+引数。
+
+
+Q157
+def total(n):
+  s = 0
+  for i in range(1, n + 1):
+    s += i
+  return s
+  
+total(5)
+
+total(10)
+
+Q158
+import turtle
+turtle = turtle.Turtle()
+def center_circle():
+  t.penup()
+  t.forward(200)
+  t.left(90)
+  t.pendown()
+  t.circle(200)
+  t.left(90)
+  t.penup()
+  t.forward(200)
+  t.pendown()
+
+center_circle()
+原点を中心に円を描く。
+
+Q160
+def circle(x, y, r):
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.forward(r)
+  t.left(90)
+  t.down()
+  t.circle
+  
+t.home()
+t.clear()
+
+circle(0, 0, 100)
+circle(100, 200, 50)
+中心と半径を指定して円を描く。
+
+Q161
+def circle(x, y, r):
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.forward(r)
+  t.left(90)
+  t.down()
+  t.circle
+  
+t.home()
+t.clear()
+circle(100,-100,50)
+circle(100,100,50)
+circle(-100,-100,50)
+circle(-100,100,50)
+
+Q162
+def circle(x, y, r = 150):
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.forward(r)
+  t.left(90)
+  t.down()
+  t.circle(r)
+
+t.home()
+t.clear()
+
+circle(100, -100)
+circle(100, 100, 50)
+circle(-100, -100, 50)
+circle(-100, 100, 50)
+
+入力を省略すると、150になる。
