@@ -1,0 +1,74 @@
+復習
+import turtle
+t = turtle.Turtle()
+
+t.home()
+t.clear()
+
+t.forward(100)
+t.left(90)
+t.forward(100)
+
+def rect(x, y, a):
+  t.up()
+  t.home()
+  t.forward(x)
+  t.left(90)
+  t.forward(y)
+  t.down()
+  for i in range(4):
+    t.forward(a)
+    t.left(-90)
+#空行
+for分の終わりを教える。
+点ｘｙまで移動して、正方形を描く関数。
+
+Q168
+ひとまとめの情報サイコロでいう、６面、振るといった情報。＝クラス（class）
+人的にしたほうが管理がしやすいという考え。
+クラス（aDice）の中身＝オブジェクト（6面、shootの機能）
+関数＝複数の機能をまとめたもの。
+オブジェクト＝機能だけでなく性質もまとめたもの。
+性質（アトリビュート）
+きのう（メソッド）
+
+class Dice:
+  face_num = 6
+  def shoot(self):
+    return random.randint(1, self.face_num)
+
+import random
+aDice = Dice()　#クラスを元にオブジェクトを作る。
+aDice.shoot()　#オブジェクトを使う。
+
+Q169
+class Dice:
+  def __init__(self, val):
+    self.face_num = val
+  def shoot(self):
+    return random.randint(1, self.face_num)
+
+n面体のサイコロ。
+
+Q170
+クラス名Dice
+性質face_num
+きのうshoot()
+
+Q172
+self
+Q173
+Q174～177オプショナル。
+Q178もやんない。
+Q179pythonってうつだけ
+Q180
+Q181 CUI
+Q182
+Q183
+Q184
+Q185
+Q186
+Q187
+Q188
+Q189
+Q190
